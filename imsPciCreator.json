@@ -1,0 +1,41 @@
+{
+    "model" : "IMSPCI",
+    "typeIdentifier": "htmlTemplateInteraction",
+    "version": "0.0.1",
+    "label": "HTML Template Interaction",
+    "description": "A container for custom HTML, styles, images, response elements",
+    "short": "HTML Template",
+    "author": "OAT SA",
+    "email": "contact@taotesting.com",
+    "tags": [],
+    "response": {
+        "cardinality": "record"
+    },
+    "runtime" : {
+        "hook" : "./runtime/htmlTemplateInteraction.min.js",
+        "src" : [
+            "./runtime/htmlTemplateInteraction.js",
+            "./runtime/recordResponse.js",
+            "./runtime/tpl/markupInner.tpl"
+        ],
+        "modules" : {
+            "htmlTemplateInteraction/runtime/htmlTemplateInteraction.min": [
+                "runtime/htmlTemplateInteraction.min.js"
+            ]
+        },
+        "libraries" : [],
+        "stylesheets": []
+    },
+    "creator" : {
+       "icon": "./icon.svg",
+       "hook": "./imsPciCreator.min.js",
+       "src" : [
+           "./imsPciCreator.js",
+           "./creator/tpl/markup.tpl",
+           "./creator/tpl/propertiesForm.tpl",
+           "./creator/widget/Widget.js",
+           "./creator/widget/states/states.js",
+           "./creator/widget/states/Question.js"
+       ]
+   }
+}

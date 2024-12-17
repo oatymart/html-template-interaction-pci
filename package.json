@@ -1,0 +1,13 @@
+{
+  "name": "htmltemplateinteraction",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Manage the dependencies of htmlTemplateInteraction",
+  "scripts": {
+  },
+  "author": "M. Nicholson",
+  "license": "MIT",
+  "devDependencies": {
+    "inliner": "^1.13.1"
+  }
+}
